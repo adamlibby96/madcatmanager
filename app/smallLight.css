@@ -25,11 +25,11 @@ components that have the btn class name.
  }
  
  .deleteIcon{
-     width: 125px;
-     height: 125px;
-     margin-right: 20px;
- }
- 
+    width: 30vw;
+    height: 30vh;
+    margin-right: 20px;
+}
+
  .fab{
      color: #FCF7F8;
      font-size: 20px;
