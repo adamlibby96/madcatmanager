@@ -1,0 +1,25 @@
+<Page class="page" loaded="onPageLoaded" navigatingTo="onNavigatingTo" 
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Tasks"></Label>
+    </ActionBar>
+
+    <GridLayout rows="*, auto">
+        <ScrollView row="0">
+            <ListView items="{{ tasks }}" itemTap="onItemTap" class="list-group">
+                <ListView.itemTemplate>
+                    <GridLayout class="list-group-item">
+                        <Label text="{{ Title }}" />
+                        <Label text="{{'Due: ' + DueDate}}" horizontalAlignment="right" className="dueDate" />
+                    </GridLayout>
+                </ListView.itemTemplate>
+
+            </ListView>
+
+        </ScrollView>
+        <StackLayout  row="1" orientation="vertical">
+            <Button text="+" tap="goToCreateTask" className="fab" horizontalAlignment="right" />
+        </StackLayout>
+    </GridLayout>
+</Page>

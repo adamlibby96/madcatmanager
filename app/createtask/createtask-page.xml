@@ -1,0 +1,16 @@
+<Page class="page" navigatingTo="onNavigatingTo" 
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <GridLayout rows="*" columns="* *">
+            <Label row="0" col="0" class="action-bar-title" horizontalAlignment="right" text="Create Task"></Label>
+            <Button row="0" col="1" width="30%" text="Cancel" tap="cancel" horizontalAlignment="right" />
+        </GridLayout>
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout id="main">
+
+        </StackLayout>
+    </ScrollView>
+</Page>

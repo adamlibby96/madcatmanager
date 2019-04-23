@@ -1,0 +1,22 @@
+<Page
+    class="background"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Settings" />
+    </ActionBar>
+
+    <GridLayout rows="*,100">
+        <GridLayout row="0" rows="auto, *" columns="auto, *">
+            <Label row="1" col="0" colwidth="200" height="50" className="txt" text="Dark Mode" horizontalAlignment="left" verticalAlignment="top"/>
+            <Button row="1" col="1" width="150" id="darkBtn" height="50" text="enabled" horizontalAlignment="right" verticalAlignment="top" tap="darkModeBtn"/>
+        </GridLayout>
+
+        <StackLayout row="1">
+            <Label class="about" text="Brogrammers: Mobile Unit" horizontalAlignment="center"/>
+            <Label class="about" text="Libby Overshiner Wittenberg Peterson" horizontalAlignment="center"/>
+            <Label class="about" text="Task Manager CMSC 4233" horizontalAlignment="center"/>
+        </StackLayout>
+    </GridLayout>
+</Page>

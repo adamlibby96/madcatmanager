@@ -1,0 +1,20 @@
+<Page class="background" navigatingTo="onNavigatingTo" navigatingFrom="onNavigatingFrom" loaded="onLoaded"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Categories"></Label>
+    </ActionBar>
+
+    <GridLayout rows="*, auto">
+        <ListView row="0" items="{{ categories }}" itemTap="onItemTap" class="list-group" id="categoryList">
+            <ListView.itemTemplate>
+                <StackLayout orientation="horizontal" class="list-group-item">
+                    <Label text="{{ name }}" textWrap="true" class="list-group-item-text"></Label>
+                </StackLayout>
+            </ListView.itemTemplate>
+        </ListView>
+        <StackLayout row="1" orientation="vertical">
+            <Button text="+" tap="addCategory" className="fab" horizontalAlignment="right"/>
+        </StackLayout>
+    </GridLayout>
+</Page>
