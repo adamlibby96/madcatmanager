@@ -12,7 +12,7 @@
     <StackLayout>
         <Label text="{{ 'Description: ' + description }}" textWrap="true" className="listGroupItemText"></Label>
         <Label text="{{ 'Due Date: ' + dueDate }}" textWrap="true" className="listGroupItemText"></Label>
-        <Label text="{{ 'Progress: ' + progress + '%' }}" textWrap="true" className="listGroupItemText"></Label>
+        <!-- <Label text="{{ 'Progress: ' + progress + '%' }}" textWrap="true" className="listGroupItemText"></Label> -->
 
     </StackLayout>
 </Page>
