@@ -31,54 +31,50 @@ components that have the btn class name.
  }
  
  .fab{
-     color: #171A21;
+     color: #FCF7F8;
      font-size: 20px;
      height: 60vh;
      width: 60vw;
      margin-right: 25px;
      margin-bottom: 25px;
-     background-color:#FCF7F8;
+     background-color:#171A21;
      border-radius: 50%;
      float: right;
  }
-
+ 
  .listGroup{
-     border-color: #FCF7F8;
- }
- 
- .listGroupItem{
-     padding: 20 20 20 10;
-     border-color: #FCF7F8;
- }
- 
- .listGroupItemText{
-     color: #FCF7F8;
-     font-size: 24px;
- }
+    border-color: #171A21;
+}
+
+.listGroupItem{
+    padding: 20 20 20 10;
+    border-color: #171A21;
+}
+
+.listGroupItemText{
+    color: #171A21;
+    font-size: 20px;
+}
  
  .txt{
-     color: #FCF7F8;
-     font-size: 24;
- }
- 
- .about{
-     color: #FCF7F8;
+     color: #171A21;
      font-size: 20;
  }
  
+ .about{
+     color: #171A21;
+     font-size: 15;
+ }
+ 
  .action-bar{
-     background-color: rgb(77, 77, 77);
+     background-color: #BFBFBF;
  }
  
  .action-bar-title {
-     color: #FCF7F8;
-     font-size: 30px;
+     color: #171A21;
+     font-size: 24px;
  }
  
  .background{
-     background-color: #171A21;
+     background-color: #FCF7F8;
  }
-
- .inputB{
-    background-color:  rgb(128, 128, 128) ;
-}

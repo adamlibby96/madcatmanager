@@ -1,10 +1,11 @@
-<Page class="page" navigatingTo="onNavigatingTo" 
+<Page class="background" navigatingTo="onNavigatingTo" 
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
-        <GridLayout rows="*" columns="* *">
-            <Label row="0" col="0" class="action-bar-title" horizontalAlignment="right" text="Create Task"></Label>
-            <Button row="0" col="1" width="30%" text="Cancel" tap="cancel" horizontalAlignment="right" />
+        <GridLayout id="ab" columns="* * *">
+            <Image col="0" src="~/images/x.png" tap="cancel" className="deleteIcon" horizontalAlignment="left"/>
+            <Label col="1" class="action-bar-title" text="Create Task" verticalAlignment="center" horizontalAlignment="center"></Label>
+            <!-- <Image col="2" src="~/images/check.png" tap="create" className="deleteIcon" horizontalAlignment="right"/> -->
         </GridLayout>
     </ActionBar>
 

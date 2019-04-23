@@ -6,22 +6,22 @@ const frameModule = require("tns-core-modules/ui/frame");
 
 
 function onLoaded(){
-  console.log("loaded");
-  if(!global.reload){
-    console.log("reload");
-    if(global.darkMode){
-      application.setCssFileName("dark.css");
-    }
-    else{
-      application.setCssFileName("light.css");
-    }
-    global.reload = true;
-    frameModule.topmost().navigate("categories/categories-page");
-    this.reload;
-  }
-  else{
-    global.reload = false;
-  }
+  // console.log("loaded");
+  // if(!global.reload){
+  //   console.log("reload");
+  //   if(global.darkMode){
+  //     application.setCssFileName("dark.css");
+  //   }
+  //   else{
+  //     application.setCssFileName("light.css");
+  //   }
+  //   global.reload = true;
+  //   frameModule.topmost().navigate("categories/categories-page");
+  //   this.reload;
+  // }
+  // else{
+  //   global.reload = false;
+  // }
 }
 exports.onLoaded = onLoaded;
 
@@ -81,6 +81,21 @@ function onItemTap(args) {
     }
   });
 }
+
+function settings(args){
+  const view = args.view;
+  const page = view.page;
+  page.frame.navigate({
+    moduleName: "settings/settings-page",
+    animated: true,
+    transition: {
+      name: "slide",
+      duration: 200,
+      curve: "ease"
+    }
+  });
+}
+exports.settings = settings;
 
 function addCategory(args) {
   const page = args.object.page;

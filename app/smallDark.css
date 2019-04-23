@@ -41,29 +41,29 @@ components that have the btn class name.
      border-radius: 50%;
      float: right;
  }
-
+ 
  .listGroup{
-     border-color: #FCF7F8;
- }
- 
- .listGroupItem{
-     padding: 20 20 20 10;
-     border-color: #FCF7F8;
- }
- 
- .listGroupItemText{
-     color: #FCF7F8;
-     font-size: 24px;
- }
+    border-color: #FCF7F8;
+}
+
+.listGroupItem{
+    padding: 20 20 20 10;
+    border-color: #FCF7F8;
+}
+
+.listGroupItemText{
+    color: #FCF7F8;
+    font-size: 20px;
+}
  
  .txt{
      color: #FCF7F8;
-     font-size: 24;
+     font-size: 20;
  }
  
  .about{
      color: #FCF7F8;
-     font-size: 20;
+     font-size: 15;
  }
  
  .action-bar{
@@ -72,7 +72,7 @@ components that have the btn class name.
  
  .action-bar-title {
      color: #FCF7F8;
-     font-size: 30px;
+     font-size: 24px;
  }
  
  .background{
@@ -80,5 +80,5 @@ components that have the btn class name.
  }
 
  .inputB{
-    background-color:  rgb(128, 128, 128) ;
+    background-color: rgb(128, 128, 128) ;
 }

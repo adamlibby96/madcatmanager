@@ -1,16 +1,24 @@
-<Page
-    class="background"
-    navigatingTo="onNavigatingTo"  
+<Page class="background" navigatingTo="onNavigatingTo" 
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
-        <Label class="action-bar-title" text="Settings" />
+        <GridLayout columns="* * *">
+            <Image col="0" src="~/images/back.png" tap="onBackButtonTap" className="deleteIcon" horizontalAlignment="left"/>
+            <Label col="1" class="action-bar-title" text="Settings" verticalAlignment="center" horizontalAlignment="center"></Label>
+        </GridLayout>
     </ActionBar>
 
     <GridLayout rows="*,100">
-        <GridLayout row="0" rows="auto, *" columns="auto, *">
+        <!-- <GridLayout row="0" rows="auto, *" columns="auto, *">
             <Label row="1" col="0" colwidth="200" height="50" className="txt" text="Dark Mode" horizontalAlignment="left" verticalAlignment="top"/>
             <Button row="1" col="1" width="150" id="darkBtn" height="50" text="enabled" horizontalAlignment="right" verticalAlignment="top" tap="darkModeBtn"/>
+        </GridLayout> -->
+
+        <GridLayout row="0" rows="auto, *" columns="auto, *">
+            <Label row="0" col="0" width="200" height="50" class="txt" text="Large Text" horizontalAlignment="left" verticalAlignment="top"/>
+            <Button row="0" col="1" width="150" id="largeBtn" height="50" text="enabled" class="settingsPadding" horizontalAlignment="right" verticalAlignment="top" tap="largeTxtBtn"/>
+            <Label row="1" col="0" colwidth="200" height="50" class="txt" text="Dark Mode" horizontalAlignment="left" verticalAlignment="top"/>
+            <Button row="1" col="1" width="150" id="darkBtn" height="50" text="enabled" class="settingsPadding" horizontalAlignment="right" verticalAlignment="top" tap="darkModeBtn"/>
         </GridLayout>
 
         <StackLayout row="1">

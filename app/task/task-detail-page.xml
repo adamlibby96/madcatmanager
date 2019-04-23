@@ -1,20 +1,18 @@
-<Page class="page" navigatingTo="onNavigatingTo" 
+<Page class="background" navigatingTo="onNavigatingTo" 
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
-        <!-- <NavigationButton tap="onBackButtonTap" android.systemIcon="ic_menu_back"/>
-        <Label class="action-bar-title" text="{{ title }}"></Label> -->
         <GridLayout columns="* * *">
             <Image col="0" src="~/images/back.png" tap="onBackButtonTap" className="deleteIcon" horizontalAlignment="left"/>
             <Label col="1" class="action-bar-title" text="{{ title }}" verticalAlignment="center" horizontalAlignment="center"></Label>
-            <!-- <Image col="2" src="~/images/delete.png" tap="deleteCat" className="deleteIcon" horizontalAlignment="right"/> -->
+            <Image col="2" src="~/images/done.png" tap="markCompleted" className="deleteIcon" horizontalAlignment="right"/>
         </GridLayout>
     </ActionBar>
 
     <StackLayout>
-        <Label text="{{ 'Description: ' + description }}" textWrap="true" class="list-group-item-text"></Label>
-        <Label text="{{ 'Due Date: ' + dueDate }}" textWrap="true" class="list-group-item-text"></Label>
-        <Label text="{{ 'Progress: ' + progress + '%' }}" textWrap="true" class="list-group-item-text"></Label>
-        <Button text="Mark Completed" tap="markCompleted" />
+        <Label text="{{ 'Description: ' + description }}" textWrap="true" className="listGroupItemText"></Label>
+        <Label text="{{ 'Due Date: ' + dueDate }}" textWrap="true" className="listGroupItemText"></Label>
+        <Label text="{{ 'Progress: ' + progress + '%' }}" textWrap="true" className="listGroupItemText"></Label>
+
     </StackLayout>
 </Page>

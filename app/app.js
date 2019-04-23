@@ -1,7 +1,7 @@
 const application = require("tns-core-modules/application");
 
-global.darkMode = false;
-global.reload = false;
+global.darkMode = true;
+global.largeTxt = true;
 
 global.getID = () => {
   return (

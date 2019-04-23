@@ -1,15 +1,18 @@
-<Page class="background" navigatingTo="onNavigatingTo" navigatingFrom="onNavigatingFrom" loaded="onLoaded"
+<Page class="background" navigatingTo="onNavigatingTo" navigatingFrom="onNavigatingFrom" loaded="onLoaded" 
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
-    <ActionBar class="action-bar">
-        <Label class="action-bar-title" text="Categories"></Label>
+    <ActionBar className="action-bar">
+        <GridLayout columns="* * *">
+            <Label col="1" className="action-bar-title" text="Categories" verticalAlignment="center" horizontalAlignment="center"></Label>
+            <Image col="2" src="~/images/settings.png" tap="settings" className="deleteIcon" horizontalAlignment="right"/>
+        </GridLayout>
     </ActionBar>
 
     <GridLayout rows="*, auto">
-        <ListView row="0" items="{{ categories }}" itemTap="onItemTap" class="list-group" id="categoryList">
+        <ListView row="0" items="{{ categories }}" itemTap="onItemTap" className="listGroup" id="categoryList">
             <ListView.itemTemplate>
-                <StackLayout orientation="horizontal" class="list-group-item">
-                    <Label text="{{ name }}" textWrap="true" class="list-group-item-text"></Label>
+                <StackLayout orientation="horizontal" className="listGroupItem">
+                    <Label text="{{ name }}" textWrap="true" className="listGroupItemText"></Label>
                 </StackLayout>
             </ListView.itemTemplate>
         </ListView>

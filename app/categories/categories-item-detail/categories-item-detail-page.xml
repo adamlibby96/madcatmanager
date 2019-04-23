@@ -1,20 +1,20 @@
-<Page class="page" navigatingTo="onNavigatingTo" 
+<Page class="background" navigatingTo="onNavigatingTo" 
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
-    <ActionBar class="action-bar">
+    <ActionBar className="action-bar">
     <!-- <NavigationButton tap="onBackButtonTap" android.systemIcon="ic_menu_back"/> -->
         <GridLayout columns="* * *">           
             <Image col="0" src="~/images/back.png" tap="onBackButtonTap" className="deleteIcon" horizontalAlignment="left"/>
-            <Label col="1" class="action-bar-title" text="{{ name }}" verticalAlignment="center" horizontalAlignment="center"  ></Label>
+            <Label col="1" className="action-bar-title" text="{{ name }}" verticalAlignment="center" horizontalAlignment="center"  ></Label>
             <Image col="2" src="~/images/delete.png" tap="deleteCat" className="deleteIcon" horizontalAlignment="right"/>
         </GridLayout>
     </ActionBar>
     <GridLayout rows="*, auto">
         <StackLayout>
-            <ListView items="{{ tasks }}" itemTap="onItemTap" class="list-group" id="categoryList" height="75%">
+            <ListView items="{{ tasks }}" itemTap="onItemTap" className="listGroup" id="categoryList" height="75%">
                 <ListView.itemTemplate>
-                    <StackLayout orientation="horizontal" class="list-group-item">
-                        <Label text="{{ title }}" textWrap="true" class="list-group-item-text"></Label>
+                    <StackLayout orientation="horizontal" className="listGroupItem">
+                        <Label text="{{ title }}" textWrap="true" className="listGroupItemText"></Label>
                     </StackLayout>
                 </ListView.itemTemplate>
             </ListView>
