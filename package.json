@@ -1,0 +1,11 @@
+{
+	"nativescript": {
+		"id": "org.nativescript.madcatmanager",
+		"tns-android": {
+			"version": "5.4.0-2019-04-04-175425-01"
+		}
+	},
+	"dependencies": {
+		"tns-core-modules": "5.4.0-next-2019-03-25-180930-01"
+	}
+}
