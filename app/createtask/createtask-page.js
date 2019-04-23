@@ -17,10 +17,10 @@ function onNavigatingTo(args) {
   // CREATE BTN **************************************************************
   var gridLayout = component.getViewById("ab");
   var create = new Image.Image();
-  create.src="~/images/check.png";
-  create.className="deleteIcon";
-  create.horizontalAlignment="right";
-  create.col="2";
+  create.src = "~/images/check.png";
+  create.className = "deleteIcon";
+  create.horizontalAlignment = "right";
+  create.col = "2";
   create.on("tap", margs => {
     var tempDate =
       date.date.getMonth() +
@@ -79,7 +79,7 @@ function onNavigatingTo(args) {
   nameTF.marginTop = "10";
   nameTF.marginRight = "5";
   nameTF.fontSize = "14";
-  nameTF.className="inputB";
+  nameTF.className = "inputB";
   grid.addChild(nameTF);
 
   // DESCRIPTION     *********************************************************
@@ -102,7 +102,7 @@ function onNavigatingTo(args) {
   descTF.marginTop = "10";
   descTF.marginRight = "5";
   descTF.fontSize = "14";
-  descTF.className="inputB";
+  descTF.className = "inputB";
   grid.addChild(descTF);
 
   // DUE DATE     ************************************************************
@@ -125,7 +125,7 @@ function onNavigatingTo(args) {
   date.col = "1";
   date.marginRight = "5";
   date.marginTop = "10";
-  date.className="inputB";
+  date.className = "inputB";
   grid.addChild(date);
 
   layout.addChild(grid);

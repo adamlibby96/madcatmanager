@@ -9,72 +9,72 @@ In many cases you may want to use the NativeScript core theme instead
 of writing your own CSS rules. For a full list of class names in the theme
 refer to http://docs.nativescript.org/ui/theme.
 */
-@import '~nativescript-theme-core/css/core.light.css';
+@import "~nativescript-theme-core/css/core.light.css";
 
 /*
 For example, the following CSS rule changes the font size of all UI
 components that have the btn class name.
 */
 .btn {
-    font-size: 18;
+  font-size: 18;
 }
-
 
 .fa {
-    font-family: "FontAwesome";
- }
- 
- .deleteIcon{
-    width: 30vw;
-    height: 30vh;
-    margin-right: 20px;
-}
- 
- .fab{
-     color: #FCF7F8;
-     font-size: 20px;
-     height: 60vh;
-     width: 60vw;
-     margin-right: 25px;
-     margin-bottom: 25px;
-     background-color:#171A21;
-     border-radius: 50%;
-     float: right;
- }
- 
- .listGroup{
-    border-color: #171A21;
+  font-family: "FontAwesome";
 }
 
-.listGroupItem{
-    padding: 20 20 20 10;
-    border-color: #171A21;
+.deleteIcon {
+  width: 30vw;
+  height: 30vh;
+  margin-right: 20px;
 }
 
-.listGroupItemText{
-    color: #171A21;
-    font-size: 24px;
+.fab {
+  color: #fcf7f8;
+  font-size: 20%;
+  height: 50vh;
+  width: 50vw;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  background-color: #171a21;
+  border-radius: 50%;
+  float: right;
 }
- 
- .txt{
-     color: #171A21;
-     font-size: 24;
- }
- 
- .about{
-     color: #171A21;
-     font-size: 20;
- }
- 
- .action-bar{
-     background-color: #BFBFBF;
- }
- 
- .action-bar-title {
-     color: #171A21;
-     font-size: 30px;
- }
- 
- .background{
-     background-color: #FCF7F8;
- }
+
+.listGroup {
+  border-color: #171a21;
+}
+
+.listGroupItem {
+  padding: 20 20 20 10;
+  border-bottom-color: #171a21;
+  border-bottom-width: 2px;
+}
+
+.listGroupItemText {
+  color: #171a21;
+  font-size: 24px;
+}
+
+.txt {
+  color: #171a21;
+  font-size: 24;
+}
+
+.about {
+  color: #171a21;
+  font-size: 18%;
+}
+
+.action-bar {
+  background-color: #bfbfbf;
+}
+
+.action-bar-title {
+  color: #171a21;
+  font-size: 20%;
+}
+
+.background {
+  background-color: #fcf7f8;
+}

@@ -2,9 +2,11 @@
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
-        <GridLayout id="ab" columns="* * *">
+        <GridLayout id="ab" columns="* auto *">
             <Image col="0" src="~/images/x.png" tap="cancel" className="deleteIcon" horizontalAlignment="left"/>
-            <Label col="1" class="action-bar-title" text="Create Task" verticalAlignment="center" horizontalAlignment="center"></Label>
+            <StackLayout col="1">
+                <Label class="action-bar-title" text="Create Task" verticalAlignment="center" horizontalAlignment="center" textWrap="true"></Label>
+            </StackLayout>
             <!-- <Image col="2" src="~/images/check.png" tap="create" className="deleteIcon" horizontalAlignment="right"/> -->
         </GridLayout>
     </ActionBar>
@@ -14,4 +16,4 @@
 
         </StackLayout>
     </ScrollView>
-</Page>
+</Page> 

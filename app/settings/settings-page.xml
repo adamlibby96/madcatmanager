@@ -21,10 +21,10 @@
             <Button row="1" col="1" width="150" id="darkBtn" height="50" text="enabled" class="settingsPadding" horizontalAlignment="right" verticalAlignment="top" tap="darkModeBtn"/>
         </GridLayout>
 
-        <StackLayout row="1">
-            <Label class="about" text="Brogrammers: Mobile Unit" horizontalAlignment="center"/>
-            <Label class="about" text="Libby Overshiner Wittenberg Peterson" horizontalAlignment="center"/>
-            <Label class="about" text="Task Manager CMSC 4233" horizontalAlignment="center"/>
+        <StackLayout row="2">
+            <Label class="about" text="Brogrammers: Mobile Unit" horizontalAlignment="center" wordWrap="true" />
+            <Label class="about" text="Libby Overshiner Wittenberg Peterson" horizontalAlignment="center" wordWrap="true"/>
+            <Label class="about" text="Task Manager CMSC 4233" horizontalAlignment="center" wordWrap="true"/>
         </StackLayout>
     </GridLayout>
 </Page>
